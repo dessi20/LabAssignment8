@@ -115,9 +115,11 @@ void printArray(int pData[], int dataSz)
 	}
 	printf("\n\t");
 
-	for (i=sz;i<dataSz;++i)
+	if (dataSz > 100) {
+		for (i=sz;i<dataSz;++i)
 	{
 		printf("%d ",pData[i]);
+	}
 	}
 	printf("\n\n");
 }
